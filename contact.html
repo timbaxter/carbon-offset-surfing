@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        header, .main-content, footer {
+            width: 100%;
+            max-width: 600px; /* Adjust the max-width as needed */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Adjust the width of the message box */
+        textarea {
+            width: 100%;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li> 
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main-content">
+        <h1>Contact Us</h1>
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <input type="submit" value="Submit" id="submitBtn">
+            <input type="hidden" name="access_key" value="58acfc43-d3d7-4f9b-a89c-5c61ec32c62c">
+        </form>
+        <footer>
+            <p>&copy; 2024 Your Website</p>
+        </footer>
+        <div id="thankYou" style="display: none;">
+            <h3>Thank you f

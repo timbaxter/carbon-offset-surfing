@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <script src="app.js" defer ></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 0 auto; /* Center the container horizontally */
+            padding: 0 20px; /* Add some padding to the sides */
+        }
+        .landing-content {
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .landing-content img {
+            width: 50%;
+            margin-right: 20px;
+        }
+        .landing-content p {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="faq.html">FAQ</a></li> 
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="landing-content">
+            <div class="container">
+                <div class="image-container">
+                  <img
+                    class="image-before slider-image"
+                   src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                    alt="color photo"
+                  />
+                  <img
+                    class="image-after slider-image"
+                    src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                    alt="black and white"
+                  />
+                </div>
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="50"
+                  aria-label="Percentage of before photo shown"
+                  class="slider"
+                />
+                <div class="slider-line" aria-hidden="true"></div>
+                <div class="slider-button" aria-hidden="true">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <rect width="256" height="256" fill="none"></rect>
+                    <line
+                      x1="128"
+                      y1="40"
+                      x2="128"
+                      y2="216"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="16"
+                    ></line>
+                    <line
+                      x1="96"
+                      y1="128"
+                      x2="16"
+                      y2="128"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="16"
+                    ></line>
+                    <polyline
+                      points="48 160 16 128 48 96"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="16"
+                    ></polyline>
+                    <line
+                      x1="160"
+                      y1="128"
+                      x2="240"
+                      y2="128"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="16"
+                    ></line>
+                    <polyline
+                      points="208 96 240 128 208 160"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="16"
+                    ></polyline>
+                  </svg>
+                </div>
+              </div>
+            <div class="video-container">
+          </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum nibh nec feugiat feugiat. Proin pretium eros id sapien eleifend ultrices. Sed ac urna vel turpis vestibulum tincidunt nec a nisl. Nulla vestibulum leo eget magna fringilla eleifend.
+            </p>
+        </div>
+        <section class="main-content">
+            <h1>Carbon Offset Your Surfing!</h1>
+            <h2>Start below</h2>
+            <p>PLant a tree for all the fun you have in the sea. The ocean gives us joy. This tool puts a bit of that joy back into the ocean. For most people, it's $10 per year. It’s not the perfect solution, far from it. But it’s a move in a good direction. Calculate your footprint and donate below</p>
+        </section>
+        <iframe data-tally-src="https://tally.so/embed/n9WkxG?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="971" frameborder="0" marginheight="0" marginwidth="0" title="Carbon Surfing Calculator "></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+        <footer>
+            <p>&copy; 2024 Your Website</p>
+        </footer>
+    </div>
+</body>
+</html>
